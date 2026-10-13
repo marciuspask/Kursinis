@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- BorderPane turi 5 zonas: top, left, center, right, bottom -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="valdikliai.PagrindinisController"
+            stylesheets="@stilius.css" prefWidth="1000.0" prefHeight="650.0">
+
+    <!-- VIRSUS: meniu juosta -->
+    <top>
+        <MenuBar>
+            <Menu text="Failas">
+                <MenuItem text="Atsijungti" onAction="#atsijungti" />
+                <SeparatorMenuItem />
+                <MenuItem text="Išeiti" onAction="#iseiti" />
+            </Menu>
+            <Menu text="Pagalba">
+                <MenuItem text="Apie programą" onAction="#apie" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- KAIRE: soninis meniu -->
+    <left>
+        <VBox styleClass="sonine-juosta" spacing="4.0">
+            <Label text="PetCare" styleClass="logotipas" />
+            <Button fx:id="pradziaBtn" text="Pradžia" onAction="#rodytiPradzia" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+            <Button fx:id="vartotojaiBtn" text="Vartotojai" onAction="#rodytiVartotojus" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+            <Button fx:id="imonesBtn" text="Įmonės" onAction="#rodytiImones" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+            <Button fx:id="paslaugosBtn" text="Paslaugos" onAction="#rodytiPaslaugas" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+            <Button fx:id="augintiniaiBtn" text="Augintiniai" onAction="#rodytiAugintinius" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+            <Button fx:id="rezervacijosBtn" text="Rezervacijos" onAction="#rodytiRezervacijas" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+            <Button fx:id="komentaraiBtn" text="Komentarai" onAction="#rodytiKomentarus" styleClass="meniu-mygtukas" maxWidth="Infinity" />
+        </VBox>
+    </left>
+
+    <!-- CENTRAS: cia keiciasi skyriu turinys -->
+    <center>
+        <StackPane fx:id="turinys" styleClass="turinys" alignment="TOP_LEFT" />
+    </center>
+
+    <!-- APACIA: busenos juosta -->
+    <bottom>
+        <HBox styleClass="busenos-juosta">
+            <Label fx:id="busenosLabel" />
+        </HBox>
+    </bottom>
+</BorderPane>

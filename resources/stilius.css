@@ -1,0 +1,77 @@
+/* ===== Soninis meniu ===== */
+.sonine-juosta {
+    -fx-background-color: #2f3e46;
+    -fx-padding: 16 10 16 10;
+    -fx-pref-width: 200;
+}
+
+.logotipas {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 18 8;
+}
+
+.meniu-mygtukas {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cad2c5;
+    -fx-alignment: center-left;
+    -fx-font-size: 14px;
+    -fx-padding: 9 12 9 12;
+    -fx-cursor: hand;
+}
+
+.meniu-mygtukas:hover {
+    -fx-background-color: #354f52;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+}
+
+.meniu-mygtukas.aktyvus {
+    -fx-background-color: #52796f;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+}
+
+/* ===== Turinio zona ===== */
+.turinys {
+    -fx-background-color: #f4f6f5;
+    -fx-padding: 24;
+}
+
+.antraste {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f3e46;
+}
+
+.poantraste {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7b78;
+}
+
+/* ===== Korteles pradzios puslapyje ===== */
+.kortele {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 16;
+    -fx-pref-width: 190;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 10, 0, 0, 2);
+}
+
+.kortele-skaicius {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #52796f;
+}
+
+.kortele-pavadinimas {
+    -fx-text-fill: #6b7b78;
+    -fx-font-size: 13px;
+}
+
+/* ===== Busenos juosta ===== */
+.busenos-juosta {
+    -fx-background-color: #e3e7e5;
+    -fx-padding: 5 12 5 12;
+}

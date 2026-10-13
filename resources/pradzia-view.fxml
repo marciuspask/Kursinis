@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="valdikliai.PradziaController" spacing="20.0">
+    <Label fx:id="sveikinimasLabel" styleClass="antraste" />
+    <Label text="Sistemos suvestinė" styleClass="poantraste" />
+    <!-- FlowPane deda elementus i eile ir kelia i kita eilute, kai netelpa -->
+    <FlowPane fx:id="kortelesPane" hgap="16.0" vgap="16.0" />
+</VBox>

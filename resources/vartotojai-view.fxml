@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="valdikliai.VartotojaiController" spacing="12.0">
+    <Label text="Vartotojai" styleClass="antraste" />
+
+    <TableView fx:id="vartotojaiTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="vardasCol" text="Vardas" prefWidth="120" />
+            <TableColumn fx:id="pavardeCol" text="Pavardė" prefWidth="130" />
+            <TableColumn fx:id="elPastasCol" text="El. paštas" prefWidth="200" />
+            <TableColumn fx:id="telefonasCol" text="Telefonas" prefWidth="130" />
+            <TableColumn fx:id="roleCol" text="Rolė" prefWidth="130" />
+            <TableColumn fx:id="uzblokuotasCol" text="Užblokuotas" prefWidth="100" />
+        </columns>
+    </TableView>
+</VBox>
